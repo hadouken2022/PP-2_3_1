@@ -10,7 +10,7 @@
 <h1>User details:</h1>
 <br>
 
-<form action="#" th:action="@{/createUser}" th:object="${user}" method="post">
+<form th:action="@{/createUser}" th:object="${user}" th:method="put">
 
     <input type="hidden" th:field="*{id}">
     First name:
