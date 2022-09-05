@@ -18,12 +18,12 @@ public class User {
     private String lastName;
 
     @Column(name = "age")
-    private int age;
+    private Integer age;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, int age) {
+    public User(String firstName, String lastName, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -67,7 +67,7 @@ public class User {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }
