@@ -23,8 +23,11 @@ import java.util.Properties;
 @ComponentScan("web_hibernate")
 public class AppConfig {
 
-    @Autowired
     private Environment env;
+
+    public AppConfig(Environment env) {
+        this.env = env;
+    }
 
     @Bean
     public DataSource getDataSource() {
